@@ -1,5 +1,5 @@
 {% set name = "dtool_tag" %}
-{% set version = "0.1.0" %}
+{% set version = "0.1.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/dtool-tag/dtool-tag-{{ version }}.tar.gz
-  sha256: c316ff1ca321d6d9deb58008858ad154dd85ffa62c0bd04fea646f3abaa7375f
+  sha256: f3a4e85d770c23c2d4aa48294fd5bb6aaf204d69340c9c103b236ffe51ee2fd4
 
 build:
   number: 0
@@ -38,7 +38,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE.rst
-  summary: 'dtool CLI commands for working with tags'
+  summary: dtool CLI commands for working with tags
   description: |
     dtool CLI commands for working with tags
   doc_url: https://github.com/jic-dtool/dtool-tag
