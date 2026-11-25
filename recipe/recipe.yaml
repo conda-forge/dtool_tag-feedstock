@@ -2,18 +2,18 @@ schema_version: 1
 
 context:
   name: dtool_tag
-  version: "0.1.1"
+  version: "0.1.2"
 
 package:
   name: ${{ name|lower }}
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/${{ name[0] }}/dtool-tag/dtool-tag-${{ version }}.tar.gz
-  sha256: f3a4e85d770c23c2d4aa48294fd5bb6aaf204d69340c9c103b236ffe51ee2fd4
+  url: https://pypi.org/packages/source/${{ name[0] }}/dtool-tag/${{ name }}-${{ version }}.tar.gz
+  sha256: 5f9cecd0e227f04c39cb5923dce5adc42589f5cbaad2eae39ec430eb7d5c2c5d
 
 build:
-  number: 4
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
