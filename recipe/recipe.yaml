@@ -21,7 +21,8 @@ requirements:
   host:
     - pip
     - python ${{ python_min }}.*
-    - setuptools
+    - hatchling
+    - hatch-vcs
   run:
     - click
     - dtool_cli
